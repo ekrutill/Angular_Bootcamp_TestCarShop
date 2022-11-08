@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply font-bold text-32;
+}
+
+h2 {
+  @apply font-bold text-18;
+}
+
+.demo-code {
+  @apply px-2 my-4 rounded bg-gray-1 border-1;
+  font-family: SFMono-Medium, 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier,
+    monospace;
+}

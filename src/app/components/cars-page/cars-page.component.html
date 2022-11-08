@@ -1,0 +1,14 @@
+
+
+<div>
+  <div class="my-3 mb-4">
+    <p>Available quantity: {{ cars.length }} </p>
+  </div>
+
+  <div class="main-box">
+    <app-car-item (clickDelete)="carDeleting.emit($event)" [car]="car" *ngFor="let car of cars"></app-car-item>
+  </div>
+  
+</div>
+
+

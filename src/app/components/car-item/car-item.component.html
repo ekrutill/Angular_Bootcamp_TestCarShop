@@ -1,0 +1,21 @@
+
+<div class="container-fluid main-box my-3">
+    <div class="img-box" >
+        <img [src]="car.image" alt="car-image">
+    </div>
+    <strong> {{ car.model }} </strong>
+    <p class="mb-3"> {{ car.firstRegistration }} </p>
+    <p class="mb-3"> {{ car.description | slice: 0:100}}... </p>
+    <p class="mb-3"> Made in: {{ car.origin }} </p>
+    <p class="mb-3" style="flex-wrap:wrap; overflow:hidden;"> {{ car.carDetails?.horsepower }} 🐎</p>
+
+        <div class="row">
+            <button class="btn btn-outline-danger px-8 col mx-2" (click)="clickDelete.emit(car.id)"> Delete </button>
+            <button class="btn btn-outline-primary px-8 col mx-2" [routerLink]="['/cars', car.id]"> Details </button>
+        </div>
+
+    </div>
+
+
+
+

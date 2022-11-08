@@ -1,0 +1,7 @@
+.navbar-link {
+  @apply px-6 py-4 transition-all duration-200 text-gray-1 hover:text-primary-1 focus:outline-none;
+}
+
+.active {
+  @apply text-primary-1;
+}

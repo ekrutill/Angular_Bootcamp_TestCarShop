@@ -1,0 +1,114 @@
+<div>
+  <h1 class="pb-8 font-bold text-center text-32 text-primary-1">Exercise page</h1>
+  <ul class="flex flex-col gap-4">
+    <h2 class="text-primary-1 text-24">Let’s start the party! 🥳</h2>
+
+    <ul class="flex flex-col gap-4 ">
+      <li>
+        <h2>1.) Use <span class="demo-code w-fit">CarService</span> to communicate with API and get first preconfigured
+          cars data. We have already prepared a test API call <span class="demo-code w-fit">GET /car</span>, you can
+          see tha data in console after visiting of Exercise page.</h2>
+      </li>
+
+      <li>
+        <h2>2.) Find <span class="demo-code">app/models/car.vo.ts</span> file and prepare your Car model depends on
+          parameters, that you have got from <span class="demo-code">http://localhost:3000/car</span> response:</h2>
+        <ul class="list-disc list-inside demo-code">
+          <li>id: number</li>
+          <li>name: string</li>
+          <li>…</li>
+          <li>…</li>
+        </ul>
+      </li>
+
+      <li>
+        <div>
+          <h2>3.) Create a new page, where we will display all our cars and bind this page to “Cars” navigation link.
+            This
+            page should also include search field, where you can filter list of displayed cars (against api).</h2>
+          Filter endpoint <span class="demo-code"> GET /car?q=searchTerm</span> , where searchTerm is the filter value
+          of
+          the search input
+          <img class="w-full my-3"
+               src="assets/search page.png" />
+        </div>
+      </li>
+
+      <li>
+        <h2>4.) Create card component preview – this component will be used to show short information of a single car,
+          in order to use it later in our “Cars” page. This card component should be be also able to display dynamic
+          content, provided by parent component, to increase component reusability.</h2>
+        <p>Content that must be shown in card:</p>
+        <div class="flex justify-between gap-5">
+          <ul class="list-disc list-inside demo-code">
+            <li>Image - car image (Chose a random image from assets)</li>
+            <li>Model - model of car</li>
+            <li>FirstRegistration - registration date</li>
+            <li>Some other car details</li>
+            <li>Delete button – used to remove our car</li>
+            <li>Details button – navigate to car details page, where will be displayed all car information</li>
+          </ul>
+          <img class="w-60"
+               src="assets/prevew card.png" />
+        </div>
+
+      </li>
+
+      <li>
+        <h2>5.) Display preconfigured cars with help of PreviewCardComponent on our “Cars” page.</h2>
+      </li>
+
+      <li>
+        <h2>6.) In <span class="demo-code"> assets</span> folder you can find some cars images that you can randomly use
+          and insert in your cards.</h2>
+      </li>
+
+      <li>
+        <h2>7.) Create new Component, that will be used to create new cars, based on car model (interface), and bind it
+          to new navigation link (“Add
+          car”)
+        </h2>
+        <p>Create car form:</p>
+        <ul class="list-disc list-inside demo-code">
+          <li>Model field is required</li>
+          <li>FirstRegistration field is required and should be in "DD/MM/YYYY" format</li>
+          <li>Origin field is required and must be of type "GERMANY", "USA" or other origin.</li>
+          <li>Save button must be active if all fields are valid</li>
+        </ul>
+        <p class="text-primary-1">Please provide error messages for a better user experience.</p>
+      </li>
+
+      <li>
+        <h2>8.) Consume POST endpoint to create new car.</h2>
+      </li>
+
+      <li>
+        <h2>9.) Create CarDetailsComponent to show car information. For navigation must be used our “Details” button
+          from car card.</h2>
+      </li>
+
+      <li>
+        <h2>10.) Consume DELETE endpoint to remove car from “Cars” page at click on “Delete” button of car card. </h2>
+      </li>
+    </ul>
+    <h2 class="text-primary-1 text-24">Already finished? Try next bonus steps! 👇</h2>
+    <ul class="flex flex-col gap-4">
+      <li>
+        <h2>1.) Write the unit test of your choice.</h2>
+      </li>
+      <li>
+        <h2>2.) Delay every request time for 500 milliseconds to simulate the real backend communication (Network
+          delay).</h2>
+      </li>
+      <li>
+        <h2>3.) Console log every outgoing request to simplify debugging.</h2>
+      </li>
+      <li>
+        <h2>4.) Add more nice styles your website.</h2>
+      </li>
+      <li>
+        <h2>5.) You are unreal! Take a coffee ☕ 👍</h2>
+      </li>
+    </ul>
+  </ul>
+</div>

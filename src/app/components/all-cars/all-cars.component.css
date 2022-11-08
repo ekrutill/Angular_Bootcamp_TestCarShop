@@ -1,0 +1,20 @@
+
+.main-box {
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:24px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+input {
+    border:none;
+    width:360px;
+    height: 40px;
+    padding: 5px;
+    box-shadow: 0px 5px 10px rgb(154, 182, 172);
+}
